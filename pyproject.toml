@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "medgarant-fastapi-test"
+version = "0.1.0"
+description = ""
+authors = ["Marat-77 <>"]
+license = "MIT"
+repository = "https://github.com/Marat-77/medgarant_test"
+readme = "README.md"
+packages = [{include = "medgarant_fastapi_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+httpx = "^0.25.1"
+
+
+[tool.poetry.group.dev.dependencies]
+autoflake = "^2.2.1"
+isort = "^5.12.0"
+black = "^23.10.1"
+mypy = "^1.6.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
